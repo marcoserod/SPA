@@ -4,7 +4,7 @@ const port = 3000;
 
 // Ruta principal que sirve un HTML con un video de YouTube y recursos pesados
 app.get("/", (req, res) => {
-  const largeContent = "A".repeat(10 * 1024 * 1024); // 10 MB
+  const largeContent = "A".repeat(2.5 * 1024 * 1024); // 2.5 MB
   res.send(`
     <!DOCTYPE html>
     <html lang="en">
@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
       
       <!-- Texto adicional -->
       <p>Contenido adicional para aumentar la carga del HTML.</p>
-      <h1>Servidor Pesado</h1><p>${largeContent}</p>
+      <h1>Servidor Pesado</h1><p style="display: none;">${largeContent}</p>
     </body>
     </html>
   `);

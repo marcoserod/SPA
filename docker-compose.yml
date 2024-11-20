@@ -11,6 +11,5 @@ services:
       resources:
         limits:
           cpus: "0.25"
-          memory: "128M"
+          memory: "32M"
     restart: unless-stopped
-
