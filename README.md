@@ -53,6 +53,16 @@ docker-compose -f docker-compose-nginx.yml up --build
 ```bash
 python attack.py
 ```
+## Demo
+
+### Demo DOS sin mitigacion
+https://github.com/user-attachments/assets/1e37f618-63c8-45ae-91d0-c4bca77db7fe
+### Demo DOS con mitigacion por proxy inverso
+https://github.com/user-attachments/assets/e9c3c33f-5fdd-471d-8f2d-94fdbfc4c1bc
+
+
+
+
 
 
 
